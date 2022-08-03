@@ -1,0 +1,19 @@
+by default export means exporting a variable with keyword default
+and then receiving it with import keyword with any name from that module. 
+
+syntax : 
+        file1.mjs
+            let a = "haris";
+            export default a;
+        file2.mjs
+            import abc from './file1.mjs'
+            console.log(abc)
+
+named export only exports and imports the values on the basis of their names
+
+            file1.mjs
+                let a = "haris";
+                export{a};
+            file2.mjs
+                import {a} from './file1.mjs'
+                console.log(a);
